@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Wbbq1KbhRH0tlQ1+jI8bxZahvxgShRMWl32U7cQd1RfKUFnfr4mQ7q8Zg3FM1+NzKhmuUE4GQ6BJ7PEC2uh5ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pablo Mariles\\Desktop\\FACULTAD\\8vo Semestre\\PrograWeb2\\RepositorioWEB\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
