@@ -14,3 +14,6 @@ _Frost Art es una página web destinada a artistas, donde podrán publicar imág
 * **images and icons** *Aqui se encuentran imagenes e iconos para su uso en la pagina web*
 * **SQL** *Aqui se encuentran los scripts de SQL SERVER para la creacion de la base de datos*
 	
+## Instrucciones de Instalación
+* Descargar el contenido de la carpeta **SQL** y ejecutar los scripts en SQL SERVER.
+* Descargar el contenido de la carpeta **Back End** y ejecutar en archivo "Back End.sln" (es necesario tener Visual Studio instalado).
