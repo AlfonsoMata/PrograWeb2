@@ -12,15 +12,18 @@ namespace Back_End.Models
         public string Contra { get; set; }
         public string Email { get; set; }
         public string Descripcion { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public DateTime? FechaNacimiento { get; set; }
         public Byte[] FotoPerfil { get; set; }
 
+        public virtual ICollection<Publicaciones> Publicaciones { get; set; }
         public virtual ICollection<Likes> Likes { get; set; }
 
         public virtual ICollection<Favoritos> Favoritos { get; set; }
 
         public virtual ICollection<UsuariosSeguidos> UsuariosSeguidos { get; set; }
         public virtual ICollection<Comentarios> Comentarios { get; set; }
+
+        public virtual ICollection<UsuarioDestacados> UsuarioDestacado { get; set; }
     }
 
     

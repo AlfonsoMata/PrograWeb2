@@ -20,6 +20,10 @@ namespace Back_End.Models
         public DbSet<UsuarioDestacados> UsuarioDestacados { get; set; }
         public DbSet<UsuariosSeguidos> usuariosSeguidos { get; set; }
 
+        public FrostArtDBContext() { }
+
+        public FrostArtDBContext(DbContextOptions<FrostArtDBContext> options) : base(options) { }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Usuarios>(EntityFrameworkQueryableExtensions =>
@@ -39,6 +43,7 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.HasKey(e => e.Id);
                 EntityFrameworkQueryableExtensions.Property(e => e.Nombre).HasMaxLength(30).IsUnicode(false).IsRequired();
 
+              
             });
 
             modelBuilder.Entity<Publicaciones>(EntityFrameworkQueryableExtensions =>
@@ -47,11 +52,15 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.Property(e => e.IdUsuario).IsRequired();
                 EntityFrameworkQueryableExtensions.Property(e => e.Titulo).HasMaxLength(60).IsUnicode(false).IsRequired();
                 EntityFrameworkQueryableExtensions.Property(e => e.Descripcion).HasMaxLength(280).IsUnicode(false).IsRequired(false);
-                EntityFrameworkQueryableExtensions.Property(e => e.IdTema).IsRequired(false);
+                EntityFrameworkQueryableExtensions.Property(e => e.IdTema).IsRequired(true);
                 EntityFrameworkQueryableExtensions.Property(e => e.Fecha).HasColumnType("datetime").IsRequired(false);
                 EntityFrameworkQueryableExtensions.Property(e => e.Activo).HasColumnType("bit").IsRequired();
 
-                //EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios).HasConstraintName("FK_PublicacionEtiquetas_Publicaciones");
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios).WithMany(y => y.Publicaciones)
+                    .HasConstraintName("FK_Publicaciones_Usuarios");
+
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Temas).WithOne(y => y.Publicaciones)
+                    .HasConstraintName("FK_Publicaciones_Temas");
             });
 
             modelBuilder.Entity<Etiquetas>(EntityFrameworkQueryableExtensions =>
@@ -93,7 +102,8 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.Property(e => e.IdPublicacion).IsRequired();
                 EntityFrameworkQueryableExtensions.Property(e => e.Imagen).IsRequired(false);
 
-                //EntityFrameworkQueryableExtensions.HasOne(e => e.Publicaciones)
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Publicaciones).WithMany(y => y.Imagenes)
+                   .HasConstraintName("FK_Imagenes_Publicaciones");
             });
 
             modelBuilder.Entity<UsuarioDestacados>(EntityFrameworkQueryableExtensions =>
@@ -103,8 +113,10 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.Property(e => e.IdPublicacion).IsRequired();
                 EntityFrameworkQueryableExtensions.Property(e => e.IndiceOrden).IsRequired();
 
-                //EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios)
-                //EntityFrameworkQueryableExtensions.HasOne(e => e.Publicaciones)
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios).WithMany(y => y.UsuarioDestacado)
+                    .HasConstraintName("FK_UsuarioDestacados_Usuarios");
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Publicaciones).WithMany(y => y.UsuarioDestacados)
+                    .HasConstraintName("FK_UsuarioDestacados_Publicaciones");
 
             });
 
@@ -146,8 +158,7 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios).WithMany(y => y.UsuariosSeguidos)
                     .HasConstraintName("FK_UsuariosSeguidos_Usuario1");
 
-                EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios2).WithMany(y => y.UsuariosSeguidos)
-                   .HasConstraintName("FK_UsuariosSeguidos_Usuario2");
+                
             });
 
         }

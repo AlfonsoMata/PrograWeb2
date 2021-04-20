@@ -12,7 +12,7 @@ namespace Back_End.Models
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
         public int IdTema { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime? Fecha { get; set; }
         public bool Activo { get; set; }
 
         public virtual Usuarios Usuarios { get; set; }
@@ -25,5 +25,9 @@ namespace Back_End.Models
         public virtual ICollection<Favoritos> Favoritos { get; set; }
 
         public virtual ICollection<Comentarios> Comentarios { get; set; }
+
+        public virtual ICollection<UsuarioDestacados> UsuarioDestacados { get; set; }
+
+        public virtual ICollection<Imagenes> Imagenes { get; set; }
     }
 }

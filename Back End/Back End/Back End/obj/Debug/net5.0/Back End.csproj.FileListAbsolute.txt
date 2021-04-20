@@ -1,0 +1,61 @@
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\appsettings.json
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.exe
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.deps.json
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.runtimeconfig.json
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.runtimeconfig.dev.json
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\ref\Back End.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csprojAssemblyReference.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.AssemblyInfoInputs.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.AssemblyInfo.cs
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csproj.CoreCompileInputs.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\staticwebassets\Back End.StaticWebAssets.Manifest.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\staticwebassets\Back End.StaticWebAssets.xml
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\scopedcss\bundle\Back End.styles.css
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.RazorTargetAssemblyInfo.cache
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csproj.CopyComplete
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\ref\Back End.dll
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.pdb
+C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.genruntimeconfig.cache
