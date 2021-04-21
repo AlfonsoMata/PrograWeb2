@@ -1,4 +1,5 @@
 ﻿using Back_End.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,50 @@ namespace Back_End.Classes.Core
                 {
                     return true;
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void ActualizaUsuario(Usuarios usuario, int id)
+        {
+            try
+            {
+                bool validUser = ValidateNotNull(usuario);
+
+                if (validUser)
+                {
+                    bool existUsuario = dbContext.Usuarios.Any(usuario => usuario.Id == id);
+                    if(existUsuario)
+                    {
+                        usuario.Id = id;
+
+                        dbContext.Update(usuario);
+                        dbContext.SaveChanges();
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void EliminarUsuario(int id)
+        {
+            try
+            {
+                Usuarios usuario = dbContext.Usuarios.Include(x=> x.Publicaciones).Include(x=> x.Likes)
+                    .Include(x => x.Favoritos).Include(x => x.UsuariosSeguidos).Include(x => x.Comentarios).Include(x => x.UsuarioDestacado).FirstOrDefault(x => x.Id == id);
+
+                dbContext.Remove(usuario);
+                dbContext.SaveChanges();
             }
             catch (Exception ex)
             {

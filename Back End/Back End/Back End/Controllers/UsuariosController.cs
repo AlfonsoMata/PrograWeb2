@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -71,11 +72,39 @@ namespace Back_End.Controllers
             }
             catch (Exception ex)
             {
-                throw ex;
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex);
             }
         }
 
+        [HttpPut("{id}")]
 
+        public IActionResult ActualizarUsuario([FromBody]Usuarios usuario,[FromRoute] int id)
+        {
+            try
+            {
+                UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+                usuarioCore.ActualizaUsuario(usuario, id);
+                return Ok("Usuario actualizado con exito");
+            }
+            catch(Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex);
+            }
+        }
+
+        [HttpDelete]
+
+        public IActionResult BorrarUsuario()
+        {
+            try
+            {
+               
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex);
+            }
+        }
 
        
 
