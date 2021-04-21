@@ -60,7 +60,7 @@ namespace Back_End.Models
                     .HasConstraintName("FK_Publicaciones_Usuarios");
 
                 EntityFrameworkQueryableExtensions.HasOne(e => e.Temas).WithOne(y => y.Publicaciones)
-                    .HasConstraintName("FK_Publicaciones_Temas");
+                    .HasForeignKey<Publicaciones>("FK_Publicaciones_Temas");
             });
 
             modelBuilder.Entity<Etiquetas>(EntityFrameworkQueryableExtensions =>
