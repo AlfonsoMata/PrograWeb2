@@ -1,5 +1,6 @@
 ﻿using Back_End.Classes.Core;
 using Back_End.Models;
+using Back_End.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -92,21 +93,48 @@ namespace Back_End.Controllers
             }
         }
 
+        //ESTE NO SE USA
         [HttpDelete]
 
-        public IActionResult BorrarUsuario()
+        public IActionResult BorrarUsuario([FromQuery] int id)
         {
             try
             {
-               
+                UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+                usuarioCore.EliminarUsuario(id);
+                return Ok("Usuario eliminado con exito");
             }
             catch (Exception ex)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex);
             }
         }
+        /*
+        [HttpGet("{id}")]
+        public IActionResult GetUsuario([FromRoute] int id)
+        {
+            UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+            UsuarioVM response = usuarioCore.GetUsuario(id);
+            return Ok(response); ;
+        }
 
-       
+       */
 
+        [HttpGet("{id}")]
+        public IActionResult GetUsuarioPerfil([FromRoute] int id)
+        {
+            UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+            UsuarioPerfilVM response = usuarioCore.GetUsuarioPerfil(id);
+            return Ok(response); ;
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult GetUsuarioDestacados([FromRoute] int id)
+        {
+            UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+            List<UsuarioDestacadosVM> response = usuarioCore.GetUsuarioDestacados(id);
+            return Ok(response); ;
+        }
     }
 }

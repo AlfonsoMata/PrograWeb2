@@ -5943,23 +5943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pablo Mariles\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MasterNetX09\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pablo Mariles\\Desktop\\FACULTAD\\8vo Semestre\\PrograWeb2\\RepositorioWEB\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
+      "projectUniqueName": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
       "projectName": "Back End",
-      "projectPath": "C:\\Users\\Pablo Mariles\\Desktop\\FACULTAD\\8vo Semestre\\PrograWeb2\\RepositorioWEB\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
-      "packagesPath": "C:\\Users\\Pablo Mariles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pablo Mariles\\Desktop\\FACULTAD\\8vo Semestre\\PrograWeb2\\RepositorioWEB\\PrograWeb2\\Back End\\Back End\\Back End\\obj\\",
+      "projectPath": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
+      "packagesPath": "C:\\Users\\MasterNetX09\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Pablo Mariles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MasterNetX09\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

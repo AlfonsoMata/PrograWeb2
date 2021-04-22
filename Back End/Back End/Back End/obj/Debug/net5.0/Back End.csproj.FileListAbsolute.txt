@@ -59,3 +59,64 @@ C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\P
 C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\ref\Back End.dll
 C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.pdb
 C:\Users\Pablo Mariles\Desktop\FACULTAD\8vo Semestre\PrograWeb2\RepositorioWEB\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.genruntimeconfig.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\appsettings.Development.json
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\appsettings.json
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.exe
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.deps.json
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.runtimeconfig.json
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.runtimeconfig.dev.json
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\ref\Back End.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Back End.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Humanizer.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.AssemblyInfo.cs
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.MvcApplicationPartsAssemblyInfo.cs
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.MvcApplicationPartsAssemblyInfo.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\staticwebassets\Back End.StaticWebAssets.Manifest.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\staticwebassets\Back End.StaticWebAssets.xml
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\scopedcss\bundle\Back End.styles.css
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.RazorTargetAssemblyInfo.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csproj.CopyComplete
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\ref\Back End.dll
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.pdb
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.genruntimeconfig.cache
+D:\Documentos\GitHub\PrograWeb2\Back End\Back End\Back End\obj\Debug\net5.0\Back End.csprojAssemblyReference.cache
