@@ -36,6 +36,8 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.Property(e => e.FechaNacimiento).HasColumnType("datetime").IsRequired(false);
                 EntityFrameworkQueryableExtensions.Property(e => e.FotoPerfil).IsRequired(false);
 
+
+
             });
 
             modelBuilder.Entity<Temas>(EntityFrameworkQueryableExtensions =>
@@ -59,8 +61,8 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.HasOne(e => e.Usuarios).WithMany(y => y.Publicaciones)
                     .HasConstraintName("FK_Publicaciones_Usuarios");
 
-                EntityFrameworkQueryableExtensions.HasOne(e => e.Temas).WithOne(y => y.Publicaciones)
-                    .HasForeignKey<Publicaciones>("FK_Publicaciones_Temas");
+                EntityFrameworkQueryableExtensions.HasOne(e => e.Temas).WithMany(y => y.Publicaciones)
+                    .HasConstraintName("FK_Publicaciones_Temas");
             });
 
             modelBuilder.Entity<Etiquetas>(EntityFrameworkQueryableExtensions =>

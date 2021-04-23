@@ -1,5 +1,6 @@
 ﻿using Back_End.Classes.Core;
 using Back_End.Models;
+using Back_End.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Back_End.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class PublicacionesController : ControllerBase
     {
@@ -29,9 +30,34 @@ namespace Back_End.Controllers
             {
                 PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
                 publicacionesCore.DesabilitarPublicacion(id);
-                return Ok("Usuario actualizado con exito");
+                return Ok("Publicacion Deshabilitada con exito");
             }
             catch(Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionUsuarioPreview([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionUsuarioPreview(id);
+            return Ok(response); ;
+        }
+
+        [HttpPost]
+        public IActionResult CrearPublicacion([FromBody] Publicaciones publicacion)
+        {
+            try
+            {
+
+                PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+                publicacionesCore.CreatePublicacion(publicacion);
+                return Ok("Publicacion Agregada");
+
+            }
+            catch (Exception ex)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex);
             }

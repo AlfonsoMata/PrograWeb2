@@ -10,6 +10,6 @@ namespace Back_End.Models
         public int Id { get; set; }
         public string Nombre { get; set; }
 
-        public virtual Publicaciones Publicaciones { get; set; }
+        public virtual ICollection<Publicaciones> Publicaciones { get; set; }
     }
 }

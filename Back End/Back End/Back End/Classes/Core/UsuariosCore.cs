@@ -208,6 +208,26 @@ namespace Back_End.Classes.Core
                 ).ToList();
             return destacados;
         }
+
+
+        public List<UsuarioFavoritosVM> GetUsuarioFavoritos(int id)
+        {
+            List<UsuarioFavoritosVM> destacados = (
+                from f in dbContext.Favoritos
+                join u in dbContext.Usuarios on f.IdUsuario equals u.Id
+                join p in dbContext.Publicaciones on f.IdPublicacion equals p.Id
+                where u.Id == id && p.Activo == true
+                select new UsuarioFavoritosVM
+                {
+                    IdUsuario = u.Id,
+                    Idpublicacion = f.IdPublicacion,
+                    Titulo = p.Titulo,
+                    Fecha = p.Fecha,
+                    Activo = p.Activo
+                }
+                ).ToList();
+            return destacados;
+        }
     }
     
 }

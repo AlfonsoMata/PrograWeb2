@@ -136,5 +136,13 @@ namespace Back_End.Controllers
             List<UsuarioDestacadosVM> response = usuarioCore.GetUsuarioDestacados(id);
             return Ok(response); ;
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetUsuarioFavoritos([FromRoute] int id)
+        {
+            UsuariosCore usuarioCore = new UsuariosCore(dbContext);
+            List<UsuarioFavoritosVM> response = usuarioCore.GetUsuarioFavoritos(id);
+            return Ok(response); ;
+        }
     }
 }

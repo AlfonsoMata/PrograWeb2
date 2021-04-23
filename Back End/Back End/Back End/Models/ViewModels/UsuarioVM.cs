@@ -46,5 +46,14 @@ namespace Back_End.Models.ViewModels
         public DateTime? Fecha { get; set; }
         public bool Activo {get;set;}
     }
-    
+
+    public class UsuarioFavoritosVM
+    {
+        public int IdUsuario { get; set; } 
+        public int Idpublicacion { get; set; }
+        public string Titulo { get; set; }
+        public DateTime? Fecha { get; set; }
+        public bool Activo { get; set; }
+    }
+
 }
