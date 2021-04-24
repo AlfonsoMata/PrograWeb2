@@ -34,7 +34,7 @@ namespace Back_End.Classes.Core
             }
         }
 
-        public List<PublicacionUsuarioPreviewVM> GetPublicacionUsuarioPreview(int id)
+        public List<PublicacionUsuarioPreviewVM> GetPublicacionUsuario(int id)
         {
             try
             {
@@ -127,5 +127,151 @@ namespace Back_End.Classes.Core
                 throw ex;
             }
         }
+
+
+        public void ActualizaPublicacion(Publicaciones publicacion, int id)
+        {
+            try
+            {
+                bool validPubli = ValidateNotNullPublicacion(publicacion);
+
+                if (validPubli)
+                {
+                    bool existPubli = dbContext.Publicaciones.Any(pub => publicacion.Id == id);
+                    if (existPubli)
+                    {
+                        publicacion.Id = id;
+
+                        dbContext.Update(publicacion);
+                        dbContext.SaveChanges();
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<PublicacionUsuarioPreviewVM> GetPublicacionEtiqueta(int id)
+        {
+            try
+            {
+                //consultar
+                //unir
+                var consulta = (from p in dbContext.Publicaciones
+                                join u in dbContext.Usuarios on p.IdUsuario equals u.Id
+                                join t in dbContext.Temas on p.IdTema equals t.Id
+                                join pe in dbContext.PublicacionEtiquetas on p.Id equals pe.IdPublicacion
+                                join ee in dbContext.Etiquetas on pe.IdEtiqueta equals ee.Id
+                                where ee.Id == id && p.Activo == true
+                                select new
+                                {
+                                    IdPublicacion = p.Id,
+                                    IdUsuario = u.Id,
+                                    NombreUsuario = u.Nombre,
+                                    FotoPerfil = u.FotoPerfil,
+                                    Titulo = p.Titulo,
+                                    Descripcion = p.Descripcion,
+                                    IdTema = t.Id,
+                                    NombreTema = t.Nombre,
+                                    Fecha = p.Fecha,
+                                    Activo = p.Activo,
+                                    IdEtiqueta = ee.Id,
+                                    EtiquetaNombre = ee.Nombre
+                                }).ToList();
+
+                var agrupador = consulta.GroupBy(x => (x.IdPublicacion, x.IdUsuario, x.NombreUsuario, x.FotoPerfil, x.Titulo, x.Descripcion, x.IdTema, x.NombreTema, x.Fecha, x.Activo));
+
+                //estructurar
+                List<PublicacionUsuarioPreviewVM> estructura = agrupador.Select(x => new PublicacionUsuarioPreviewVM
+                {
+                    IdPublicacion = x.Key.IdPublicacion,
+                    IdUsuario = x.Key.IdUsuario,
+                    NombreUsuario = x.Key.NombreUsuario,
+                    FotoPerfil = x.Key.FotoPerfil,
+                    Titulo = x.Key.Titulo,
+                    Descripcion = x.Key.Descripcion,
+                    IdTema = x.Key.IdTema,
+                    NombreTema = x.Key.NombreTema,
+                    Fecha = x.Key.Fecha,
+                    Activo = x.Key.Activo,
+                    Etiquetas = x.Select(y => new PublicacionEtiquetasVM
+                    {
+                        Id = y.IdEtiqueta,
+                        Nombre = y.EtiquetaNombre
+                    }).ToList()
+                }).ToList();
+
+                return estructura;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<PublicacionUsuarioPreviewVM> GetPublicacionTema(int id)
+        {
+            try
+            {
+                //consultar
+                //unir
+                var consulta = (from p in dbContext.Publicaciones
+                                join u in dbContext.Usuarios on p.IdUsuario equals u.Id
+                                join t in dbContext.Temas on p.IdTema equals t.Id
+                                join pe in dbContext.PublicacionEtiquetas on p.Id equals pe.IdPublicacion
+                                join ee in dbContext.Etiquetas on pe.IdEtiqueta equals ee.Id
+                                where t.Id == id && p.Activo == true
+                                select new
+                                {
+                                    IdPublicacion = p.Id,
+                                    IdUsuario = u.Id,
+                                    NombreUsuario = u.Nombre,
+                                    FotoPerfil = u.FotoPerfil,
+                                    Titulo = p.Titulo,
+                                    Descripcion = p.Descripcion,
+                                    IdTema = t.Id,
+                                    NombreTema = t.Nombre,
+                                    Fecha = p.Fecha,
+                                    Activo = p.Activo,
+                                    IdEtiqueta = ee.Id,
+                                    EtiquetaNombre = ee.Nombre
+                                }).ToList();
+
+                var agrupador = consulta.GroupBy(x => (x.IdPublicacion, x.IdUsuario, x.NombreUsuario, x.FotoPerfil, x.Titulo, x.Descripcion, x.IdTema, x.NombreTema, x.Fecha, x.Activo));
+
+                //estructurar
+                List<PublicacionUsuarioPreviewVM> estructura = agrupador.Select(x => new PublicacionUsuarioPreviewVM
+                {
+                    IdPublicacion = x.Key.IdPublicacion,
+                    IdUsuario = x.Key.IdUsuario,
+                    NombreUsuario = x.Key.NombreUsuario,
+                    FotoPerfil = x.Key.FotoPerfil,
+                    Titulo = x.Key.Titulo,
+                    Descripcion = x.Key.Descripcion,
+                    IdTema = x.Key.IdTema,
+                    NombreTema = x.Key.NombreTema,
+                    Fecha = x.Key.Fecha,
+                    Activo = x.Key.Activo,
+                    Etiquetas = x.Select(y => new PublicacionEtiquetasVM
+                    {
+                        Id = y.IdEtiqueta,
+                        Nombre = y.EtiquetaNombre
+                    }).ToList()
+                }).ToList();
+
+                return estructura;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

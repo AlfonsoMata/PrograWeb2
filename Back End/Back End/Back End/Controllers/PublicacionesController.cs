@@ -39,10 +39,10 @@ namespace Back_End.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetPublicacionUsuarioPreview([FromRoute] int id)
+        public IActionResult GetPublicacionUsuario([FromRoute] int id)
         {
             PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
-            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionUsuarioPreview(id);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionUsuario(id);
             return Ok(response); ;
         }
 
@@ -62,5 +62,42 @@ namespace Back_End.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex);
             }
         }
+
+
+        [HttpPut("{id}")]
+
+        public IActionResult ActualizarPublicacion([FromBody] Publicaciones publicacion, [FromRoute] int id)
+        {
+            try
+            {
+                PublicacionesCore publicacionCore = new PublicacionesCore(dbContext);
+                publicacionCore.ActualizaPublicacion(publicacion, id);
+                return Ok("Publicacion actualizada con exito");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex);
+            }
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionEtiqueta([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionEtiqueta(id);
+            return Ok(response); ;
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionTema([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionTema(id);
+            return Ok(response); ;
+        }
+
+
     }
 }
