@@ -44,7 +44,7 @@ namespace Back_End.Models.ViewModels
         public int IndiceOrden { get; set; }
         public string Titulo { get; set; }
         public DateTime? Fecha { get; set; }
-        public bool Activo {get;set;}
+        public bool Activo {get;set; }
     }
 
     public class UsuarioFavoritosVM
