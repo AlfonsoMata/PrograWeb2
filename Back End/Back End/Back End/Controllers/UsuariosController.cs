@@ -23,6 +23,7 @@ namespace Back_End.Controllers
             this.dbContext = dbContext;
         }
 
+        /*
         // GET: api/usuarios/get
         [HttpGet]
         public IEnumerable<Usuarios> GetAll()
@@ -41,6 +42,7 @@ namespace Back_End.Controllers
             return "value";
         }
 
+        */
         [HttpPost]
         public IEnumerable<Usuarios> LogIn(string nombre, string contra)
         {
