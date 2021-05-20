@@ -34,7 +34,7 @@ namespace Back_End.Models
                 EntityFrameworkQueryableExtensions.Property(e => e.Email).HasMaxLength(254).IsUnicode(false).IsRequired();
                 EntityFrameworkQueryableExtensions.Property(e => e.Descripcion).HasMaxLength(280).IsUnicode(false).IsRequired(false);
                 EntityFrameworkQueryableExtensions.Property(e => e.FechaNacimiento).HasColumnType("datetime").IsRequired(false);
-                EntityFrameworkQueryableExtensions.Property(e => e.FotoPerfil).HasMaxLength(150).IsRequired(false);
+                EntityFrameworkQueryableExtensions.Property(e => e.FotoPerfil).HasMaxLength(450).IsRequired(false);
 
 
 
@@ -102,7 +102,7 @@ namespace Back_End.Models
             {
                 EntityFrameworkQueryableExtensions.HasKey(e => e.Id);
                 EntityFrameworkQueryableExtensions.Property(e => e.IdPublicacion).IsRequired();
-                EntityFrameworkQueryableExtensions.Property(e => e.Imagen).HasMaxLength(150).IsRequired(false);
+                EntityFrameworkQueryableExtensions.Property(e => e.Imagen).HasMaxLength(450).IsRequired(false);
 
                 EntityFrameworkQueryableExtensions.HasOne(e => e.Publicaciones).WithMany(y => y.Imagenes)
                    .HasConstraintName("FK_Imagenes_Publicaciones");

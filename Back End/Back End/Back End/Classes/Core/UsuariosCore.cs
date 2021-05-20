@@ -154,7 +154,7 @@ namespace Back_End.Classes.Core
                 var consulta = (from us in dbContext.Usuarios
                                 join ss in dbContext.usuariosSeguidos on us.Id equals ss.IdUsuario
                                 join aaa in dbContext.Usuarios on ss.IdUsuarioSeguido equals aaa.Id
-                                   where us.Id == id
+                                where us.Id == id
                                 select new
                                 {
                                     Id = us.Id,
@@ -166,7 +166,7 @@ namespace Back_End.Classes.Core
                                     SeguidoFoto = aaa.FotoPerfil
                                 }).ToList();
 
-                var agrupador = consulta.GroupBy(x => (x.Id, x.Nombre, x.Descripcion,x.FotoPerfil));
+                var agrupador = consulta.GroupBy(x => (x.Id, x.Nombre, x.Descripcion, x.FotoPerfil));
 
                 //estructurar
                 UsuarioPerfilVM estructura = agrupador.Select(x => new UsuarioPerfilVM
@@ -190,6 +190,7 @@ namespace Back_End.Classes.Core
                 throw ex;
             }
         }
+
         public List<UsuarioDestacadosVM> GetUsuarioDestacados(int id)
         {
             List<UsuarioDestacadosVM> destacados = (

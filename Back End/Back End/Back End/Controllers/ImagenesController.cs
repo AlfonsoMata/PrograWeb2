@@ -16,6 +16,10 @@ namespace Back_End.Controllers
     public class ImagenesController : ControllerBase
     {
         private FrostArtDBContext dbContext;
+        public ImagenesController(FrostArtDBContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
 
         [HttpPost]
         public IActionResult SubirImagen([FromBody] Imagenes imagen)
