@@ -13,5 +13,47 @@ namespace Back_End.Classes.Core
         {
             this.dbContext = dbContext;
         }
+
+
+
+        public void SubirImagen(Imagenes imagen)
+        {
+            try
+            {
+                    dbContext.Add(imagen);
+                    dbContext.SaveChanges();
+               
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void EliminarImagen(int id)
+        {
+            try
+            {
+                Imagenes imagen = dbContext.Imagenes.FirstOrDefault(x => x.Id == id);
+
+                dbContext.Remove(imagen);
+                dbContext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public List<Imagenes> GetImagenes(int idpublicacion)
+        {
+            var imagenes = (
+                from i in dbContext.Imagenes
+                where i.IdPublicacion == idpublicacion
+                select i
+                ).ToList();
+            return imagenes;
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace Back_End.Controllers
             {
 
                 ImagenesCore imagenesCore = new ImagenesCore(dbContext);
-                // imagenesCore.Create(usuario);
+                 imagenesCore.SubirImagen(imagen);
                 return Ok("Imagen Agregada");
 
             }
@@ -38,12 +38,12 @@ namespace Back_End.Controllers
         //ESTE NO SE USA
         [HttpDelete]
 
-        public IActionResult BorrarImagen([FromQuery] int id)
+        public IActionResult BorrarImagen(int id)
         {
             try
             {
                 ImagenesCore imagenesCore = new ImagenesCore(dbContext);
-               // imagenesCore.EliminarUsuario(id);
+                imagenesCore.EliminarImagen(id);
                 return Ok("Imagen eliminada con exito");
             }
             catch (Exception ex)
@@ -56,12 +56,12 @@ namespace Back_End.Controllers
 
 
         [HttpGet("{id}")]
-        public IActionResult GetImagenPublicacion([FromRoute] int id)
+        public IActionResult GetImagenPublicacion( int id)
         {
             ImagenesCore imagenesCore = new ImagenesCore(dbContext);
-            // List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionEtiqueta(id);
-            //return Ok(response); 
-            return Ok();
+             List<Imagenes> response = imagenesCore.GetImagenes(id);
+            return Ok(response); 
+            //return Ok();
         }
 
     }

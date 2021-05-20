@@ -13,7 +13,7 @@ namespace Back_End.Models
         public string Email { get; set; }
         public string Descripcion { get; set; }
         public DateTime? FechaNacimiento { get; set; }
-        public Byte[] FotoPerfil { get; set; }
+        public string FotoPerfil { get; set; }
 
         public virtual ICollection<Publicaciones> Publicaciones { get; set; }
         public virtual ICollection<Likes> Likes { get; set; }

@@ -9,7 +9,7 @@ namespace Back_End.Models
     {
         public int Id { get; set; }
         public int IdPublicacion { get; set; }
-        public Byte[] Imagen { get; set; }
+        public string Imagen { get; set; }
 
         public virtual Publicaciones Publicaciones { get; set; }
     }

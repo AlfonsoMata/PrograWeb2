@@ -14,7 +14,7 @@ namespace Back_End.Models.ViewModels
         public int IdPublicacion { get; set; }
         public int IdUsuario { get; set; }
         public string NombreUsuario { get; set; }
-        public Byte[] FotoPerfil { get; set; }
+        public string FotoPerfil { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
         public int IdTema { get; set; }
