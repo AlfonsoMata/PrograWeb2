@@ -25,7 +25,7 @@ namespace Back_End.Models.ViewModels
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public Byte[] FotoPerfil { get; set; }
+        public string FotoPerfil { get; set; }
         public List<UsuariosSeguidosVM> Seguidos { get; set; }
     }
 
@@ -33,7 +33,7 @@ namespace Back_End.Models.ViewModels
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public Byte[] FotoPerfil { get; set; }
+        public string FotoPerfil { get; set; }
     }
 
 

@@ -99,5 +99,14 @@ namespace Back_End.Controllers
         }
 
 
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionId([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionId(id);
+            return Ok(response); ;
+        }
+
+
     }
 }

@@ -5943,19 +5943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alfon\\.nuget\\packages\\": {}
+    "C:\\Users\\MasterNetX09\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alfon\\Documents\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
+      "projectUniqueName": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
       "projectName": "Back End",
-      "projectPath": "C:\\Users\\alfon\\Documents\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
-      "packagesPath": "C:\\Users\\alfon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alfon\\Documents\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\obj\\",
+      "projectPath": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\Back End.csproj",
+      "packagesPath": "C:\\Users\\MasterNetX09\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\GitHub\\PrograWeb2\\Back End\\Back End\\Back End\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alfon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MasterNetX09\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6018,7 +6018,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
