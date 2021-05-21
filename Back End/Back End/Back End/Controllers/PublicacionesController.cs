@@ -53,8 +53,8 @@ namespace Back_End.Controllers
             {
 
                 PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
-                publicacionesCore.CreatePublicacion(publicacion);
-                return Ok("Publicacion Agregada");
+                string response = publicacionesCore.CreatePublicacion(publicacion);
+                return Ok(response); //trae el id de la publicacion creada
 
             }
             catch (Exception ex)
@@ -106,6 +106,16 @@ namespace Back_End.Controllers
             List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionId(id);
             return Ok(response); ;
         }
+
+
+        [HttpGet]
+        public IActionResult GetPublicacionesHome()
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionesHome();
+            return Ok(response); ;
+        }
+
 
 
     }
