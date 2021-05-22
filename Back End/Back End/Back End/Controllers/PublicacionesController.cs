@@ -133,5 +133,39 @@ namespace Back_End.Controllers
             return Ok(response); 
         }
 
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionUsuarioLimit9([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionUsuarioLimit9(id);
+            return Ok(response); ;
+        }
+
+        [HttpGet]
+        public IEnumerable<TemasMasPublicaciones> GetTemasMasPublicaciones()
+        {
+
+            try
+            {
+                PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+                return publicacionesCore.GetTemasMasPublicaciones();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionUsuarioPreview([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionUsuarioPreview(id);
+            return Ok(response); ;
+        }
     }
 }

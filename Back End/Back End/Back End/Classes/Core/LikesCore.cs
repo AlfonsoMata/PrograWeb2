@@ -95,5 +95,25 @@ namespace Back_End.Classes.Core
                 ).ToList();
             return likes;
         }
+
+
+        public List<LikesUsuario> GetLikesUsuario(int idusuario)
+        {
+            var likes = (
+                from l in dbContext.Likes
+                join p in dbContext.Publicaciones on l.IdPublicacion equals p.Id
+                group p by p.IdUsuario into grp
+                orderby grp.Count() descending, grp.Key descending
+                where grp.Key == idusuario
+                select new LikesUsuario
+                {
+                    IdUsuario = grp.Key,
+                    Likes = grp.Count()
+                }
+                ).ToList();
+            return likes;
+        }
+
+
     }
 }

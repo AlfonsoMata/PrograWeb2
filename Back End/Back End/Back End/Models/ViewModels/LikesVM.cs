@@ -14,4 +14,10 @@ namespace Back_End.Models.ViewModels
         public int Likes { get; set; }
         public int IdPublicacion { get; set; }
     }
+    public class LikesUsuario
+    {
+        public int Likes { get; set; }
+        public int IdUsuario { get; set; }
+    }
+
 }

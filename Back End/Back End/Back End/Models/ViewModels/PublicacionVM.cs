@@ -42,4 +42,10 @@ namespace Back_End.Models.ViewModels
         public DateTime Fecha { get; set; }
         public bool Activo { get; set; }
     }
+
+    public class TemasMasPublicaciones
+    {
+        public int IdTema { get; set; }
+        public int CantPublicaciones { get; set; }
+    }
 }

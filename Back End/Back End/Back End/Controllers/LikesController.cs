@@ -92,5 +92,22 @@ namespace Back_End.Controllers
             }
 
         }
+
+        [HttpGet]
+        public IEnumerable<LikesUsuario> GetLikesUsuario(int idusuario)
+        {
+
+            try
+            {
+                LikesCore likesCore = new LikesCore(dbContext);
+                return likesCore.GetLikesUsuario(idusuario);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
     }
