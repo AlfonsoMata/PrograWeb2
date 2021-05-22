@@ -30,8 +30,8 @@ namespace Back_End.Controllers
             {
 
                 EtiquetasCore etiquetasCore = new EtiquetasCore(dbContext);
-                etiquetasCore.CreateEtiqueta(etiqueta);
-                return Ok("Etiqueta Agregada");
+                string response = etiquetasCore.CreateEtiqueta(etiqueta);
+                return Ok(response);
 
             }
             catch (Exception ex)

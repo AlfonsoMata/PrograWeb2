@@ -1,5 +1,6 @@
 ﻿using Back_End.Classes.Core;
 using Back_End.Models;
+using Back_End.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -74,5 +75,22 @@ namespace Back_End.Controllers
             }
 
         }
-      }
+
+        [HttpGet]
+        public IEnumerable<LikesPublicacion> GetPublicacionesMasLikes()
+        {
+
+            try
+            {
+                LikesCore likesCore = new LikesCore(dbContext);
+                return likesCore.GetPublicacionesMasLikes();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+    }
     }

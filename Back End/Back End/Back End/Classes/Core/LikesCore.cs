@@ -1,4 +1,5 @@
 ﻿using Back_End.Models;
+using Back_End.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,6 +76,22 @@ namespace Back_End.Classes.Core
                 from l in dbContext.Likes
                 where l.IdPublicacion == idpublicacion
                 select l
+                ).ToList();
+            return likes;
+        }
+
+
+        public List<LikesPublicacion> GetPublicacionesMasLikes()
+        {
+            var likes = (
+                from l in dbContext.Likes
+                group l by l.IdPublicacion into grp
+                orderby grp.Count() descending, grp.Key descending
+                select new LikesPublicacion
+                {
+                    IdPublicacion = grp.Key,
+                    Likes = grp.Count()
+                }
                 ).ToList();
             return likes;
         }

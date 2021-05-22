@@ -86,8 +86,8 @@ namespace Back_End.Controllers
             try
             {
                 UsuariosCore usuarioCore = new UsuariosCore(dbContext);
-                usuarioCore.ActualizaUsuario(usuario, id);
-                return Ok("Usuario actualizado con exito");
+                Usuarios response = usuarioCore.ActualizaUsuario(usuario, id);
+                return Ok(response);
             }
             catch(Exception ex)
             {

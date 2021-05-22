@@ -62,7 +62,7 @@ namespace Back_End.Classes.Core
             }
         }
 
-        public void ActualizaUsuario(Usuarios usuario, int id)
+        public Usuarios ActualizaUsuario(Usuarios usuario, int id)
         {
             try
             {
@@ -77,12 +77,14 @@ namespace Back_End.Classes.Core
 
                         dbContext.Update(usuario);
                         dbContext.SaveChanges();
+                        return usuario;
                     }
                     else
                     {
-
+                        return null;
                     }
                 }
+                return null;
             }
             catch (Exception ex)
             {

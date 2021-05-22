@@ -18,7 +18,7 @@ namespace Back_End.Classes.Core
 
 
 
-        public void CreateEtiqueta(Etiquetas etiqueta)
+        public string CreateEtiqueta(Etiquetas etiqueta)
         {
             try
             {
@@ -28,7 +28,9 @@ namespace Back_End.Classes.Core
                 {
                     dbContext.Add(etiqueta);
                     dbContext.SaveChanges();
+                    return etiqueta.Id.ToString();
                 }
+                return "Null";
             }
             catch (Exception ex)
             {

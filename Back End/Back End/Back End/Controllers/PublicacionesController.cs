@@ -117,6 +117,21 @@ namespace Back_End.Controllers
         }
 
 
+        [HttpGet]
+        public IActionResult GetPublicacionesNuevas()
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionesNuevas();
+            return Ok(response); ;
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionTemaLimite9([FromRoute] int id)
+        {
+            PublicacionesCore publicacionesCore = new PublicacionesCore(dbContext);
+            List<PublicacionUsuarioPreviewVM> response = publicacionesCore.GetPublicacionTemaLimite9(id);
+            return Ok(response); 
+        }
 
     }
 }
