@@ -26,9 +26,34 @@ namespace Back_End.Classes.Core
 
                 if (validEtiqueta)
                 {
+
                     dbContext.Add(etiqueta);
                     dbContext.SaveChanges();
                     return etiqueta.Id.ToString();
+                }
+                else
+                {
+                   
+
+                    var eti = (
+                      from e in dbContext.Etiquetas
+                      
+                      
+                      where e.Nombre == etiqueta.Nombre
+                      select new 
+                      {
+                          IdEtiqueta = e.Id
+                         
+                      }
+                      ).ToList();
+
+
+                    var estructura = eti.Select(x => new 
+                    {
+                        IdEtiqueta = x.IdEtiqueta
+                    }).First();
+
+                    return estructura.IdEtiqueta.ToString();
                 }
                 return "Null";
             }
@@ -42,8 +67,8 @@ namespace Back_End.Classes.Core
         {
             try
             {
-               // bool existUsuario = dbContext.Usuarios.Any(usuario => usuario.Id == id);
-                if (string.IsNullOrEmpty(etiqueta.Nombre)|| dbContext.Etiquetas.Any(a => a.Nombre == etiqueta.Nombre))
+               
+                if (dbContext.Etiquetas.Any(a => a.Nombre == etiqueta.Nombre))
                 {
                     return false;
                 }

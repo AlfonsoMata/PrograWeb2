@@ -106,47 +106,7 @@ namespace Back_End.Classes.Core
                 throw ex;
             }
         }
-        /*
-        public UsuarioVM GetUsuario(int id)
-        {
-            try
-            {
-                //consultar
-                //unir
-                var consulta = (from us in dbContext.Usuarios
-                                join ss in dbContext.usuariosSeguidos on us.Id equals ss.IdUsuario
-                                where us.Id == id
-                                select new
-                                {
-                                    Id = us.Id,
-                                    CompleteName = $"{us.Nombre} {us.Id}",
-                                    SSName = ss.Name,
-                                    SSCredits = ss.Credits
-                                }).ToList();
-
-                var agrupador = consulta.GroupBy(x => (x.Id, x.CompleteName));
-
-                //estructurar
-                UsuarioVM estructura = agrupador.Select(x => new UsuarioVM
-                {
-                    CompleteName = x.Key.CompleteName,
-                    Subjects = x.Select(y => new SubjectViewModel
-                    {
-                        Name = y.SSName,
-                        Credits = y.SSCredits
-                    }).ToList()
-                }).First();
-
-                return estructura;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        */
-
+      
         public UsuarioPerfilVM GetUsuarioPerfil(int id)
         {
             try
