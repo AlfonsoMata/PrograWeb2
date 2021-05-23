@@ -44,8 +44,9 @@ namespace Back_End.Models
             {
                 EntityFrameworkQueryableExtensions.HasKey(e => e.Id);
                 EntityFrameworkQueryableExtensions.Property(e => e.Nombre).HasMaxLength(30).IsUnicode(false).IsRequired();
+                EntityFrameworkQueryableExtensions.Property(e => e.Imagen).HasMaxLength(450).IsUnicode(false);
 
-              
+
             });
 
             modelBuilder.Entity<Publicaciones>(EntityFrameworkQueryableExtensions =>

@@ -42,7 +42,8 @@ namespace Back_End.Classes.Core
         {
             try
             {
-                if (string.IsNullOrEmpty(etiqueta.Nombre))
+               // bool existUsuario = dbContext.Usuarios.Any(usuario => usuario.Id == id);
+                if (string.IsNullOrEmpty(etiqueta.Nombre)|| dbContext.Etiquetas.Any(a => a.Nombre == etiqueta.Nombre))
                 {
                     return false;
                 }

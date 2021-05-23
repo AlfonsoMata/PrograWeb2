@@ -602,7 +602,7 @@ namespace Back_End.Classes.Core
                 //consultar
                 //unir
                 var consulta = (from p in dbContext.Publicaciones
-                                join u in dbContext.Usuarios on p.IdUsuario equals u.Id
+                                join u in dbContext.Usuarios on p.IdUsuario equals u.Id 
                                 join t in dbContext.Temas on p.IdTema equals t.Id
                                 join pe in dbContext.PublicacionEtiquetas on p.Id equals pe.IdPublicacion
                                 join ee in dbContext.Etiquetas on pe.IdEtiqueta equals ee.Id

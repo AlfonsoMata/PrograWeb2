@@ -72,5 +72,21 @@ namespace Back_End.Classes.Core
                 throw ex;
             }
         }
+
+
+        public List<PublicacionEtiquetas> GetPublicacionPublicacionEtiquetas(int idpublicacion)
+        {
+            var publicaciones = (
+                from p in dbContext.PublicacionEtiquetas
+                where p.IdPublicacion == idpublicacion
+                select new PublicacionEtiquetas
+                {
+                    Id = p.Id,
+                    IdEtiqueta = p.IdEtiqueta,
+                    IdPublicacion = p.IdPublicacion
+                }
+                ).ToList();
+            return publicaciones;
+        }
     }
 }

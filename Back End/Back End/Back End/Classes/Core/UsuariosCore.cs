@@ -29,7 +29,7 @@ namespace Back_End.Classes.Core
         {
             try
             {
-                bool validUser = ValidateNotNull(usuario);
+                bool validUser = ValidateNotNull(usuario) && !dbContext.Usuarios.Any(a => a.Nombre == usuario.Nombre);
 
                 if (validUser)
                 {

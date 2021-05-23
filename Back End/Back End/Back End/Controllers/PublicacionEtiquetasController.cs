@@ -55,5 +55,13 @@ namespace Back_End.Controllers
             }
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetPublicacionPublicacionEtiquetas([FromRoute] int id)
+        {
+            PublicacionEtiquetasCore publicacionesCore = new PublicacionEtiquetasCore(dbContext);
+            List<PublicacionEtiquetas> response = publicacionesCore.GetPublicacionPublicacionEtiquetas(id);
+            return Ok(response); ;
+        }
+
     }
 }
