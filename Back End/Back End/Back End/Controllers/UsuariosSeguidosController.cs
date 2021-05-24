@@ -1,5 +1,6 @@
 ﻿using Back_End.Classes.Core;
 using Back_End.Models;
+using Back_End.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -57,6 +58,24 @@ namespace Back_End.Controllers
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, ex);
             }
+        }
+
+
+        [HttpGet]
+        public IEnumerable<UsuarioSeguidoresVM> GetSeguidoresUsuario(int idusuario)
+        {
+
+            try
+            {
+                UsuariosSeguidosCore usuariosSeguidosCore = new UsuariosSeguidosCore(dbContext);
+                return usuariosSeguidosCore.GetSeguidoresUsuario(idusuario);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

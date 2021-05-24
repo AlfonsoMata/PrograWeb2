@@ -56,4 +56,11 @@ namespace Back_End.Models.ViewModels
         public bool Activo { get; set; }
     }
 
+
+    public class UsuarioSeguidoresVM
+    {
+        public int IdUsuario { get; set; }
+        public int Seguidores { get; set; }
+    }
+
 }

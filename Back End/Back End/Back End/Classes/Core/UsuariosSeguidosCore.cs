@@ -1,4 +1,5 @@
 ﻿using Back_End.Models;
+using Back_End.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,6 +67,24 @@ namespace Back_End.Classes.Core
             {
                 throw ex;
             }
+        }
+
+
+        public List<UsuarioSeguidoresVM> GetSeguidoresUsuario(int idusuario)
+        {
+            var seguidores = (
+                from s in dbContext.usuariosSeguidos
+                
+                group s by s.IdUsuarioSeguido into grp
+                orderby grp.Count() descending, grp.Key descending
+                where grp.Key == idusuario
+                select new UsuarioSeguidoresVM
+                {
+                    IdUsuario = grp.Key,
+                    Seguidores = grp.Count()
+                }
+                ).ToList();
+            return seguidores;
         }
     }
 }
