@@ -18,4 +18,7 @@ _Frost Art es una página web destinada a artistas, donde podrán publicar imág
 * Descargar el contenido de la carpeta **SQL** y ejecutar los scripts en SQL SERVER.
 * El primer archivo a ejecutar es "FrostArtCreateTables.sql".
 * El segundo archivo a ejecutar es "FrostArt  Actualizacion 1.sql".
+* El tercer archivo a ejecutar es "FrostArt  Actualizacion 2.sql".
+* El cuarto archivo a ejecutar es "FrostArt Actualizacion 3 Insert Temas.sql".
 * Descargar el contenido de la carpeta **Back End** y ejecutar en archivo "Back End.sln" (es necesario tener Visual Studio instalado).
+* **Dirigirse al github del FrontEnd de la pagina y seguir las instrucciones https://github.com/AlfonsoMata/frost_art_app_interface**
